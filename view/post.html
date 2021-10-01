@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发表</title>
+    <link rel="stylesheet" href="/public/lib/bootstrap.css">
+</head>
+<body>
+    <div class="header container">
+        <div class="page-header">
+            <h1><a href="/">首页</a> <small>发表评论</small></h1>
+        </div>
+    </div>
+    <div class="comments container">
+        <form action="/action_post" method="get">
+            <div class="form-group">
+                <label for="input_name">Your Name</label>
+                <input type="text" class="form-control" required minlength="2" maxlength="10" id="input_name" name="name" placeholder="Please input your name">
+            </div>
+            <div class="form-group">
+                <label for="textarea_message">Message</label>
+                <textarea class="form-control" name="message" id="textarea_message" cols="30" rows="10" required minlength="2" maxlength="20" placeholder="Please input your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+        </form>
+    </div>
+</body>
+</html>
